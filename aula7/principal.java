@@ -17,13 +17,9 @@ public class principal {
 
         System.out.println("Informe um valor para 'C':");
         delta.setC(entrada.nextDouble());
+        entrada.close();
 
         delta.calcularDelta();
-        
-        if (delta.getDelta() < 0) {
-            System.out.println("Erro. Delta < 0 não possui raíz");
-        } else {
-            xis.calcularX(delta);
-        }
+        xis.calcularX(delta);
     }
 }
