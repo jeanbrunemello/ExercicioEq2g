@@ -38,6 +38,7 @@ public class EqXn {
 
     public void calcularX(Delta delta) {
         if (delta.getDelta() > 0) {
+            System.out.println("calculando os valores de xn e xp");
             System.out.print("o valor de xn é: ");
             calcularXn(delta);
             System.out.print("o valor de xp é: ");
